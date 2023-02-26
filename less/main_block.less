@@ -1,0 +1,242 @@
+.main__block{
+    height: 100vh;
+    width: 100%;
+    background: url(../img/rectangle1.png) no-repeat center/cover;
+    color: #FFFFFF;
+    .left__block{
+        width: 150px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        .dc;
+        flex-direction: column;
+        background-color: rgba(51, 51, 51, 0.75);
+    
+        // .left__block__title{
+        //     width: 280px;
+        //     rotate: -90deg;
+        //     font-size: 18px; 
+        //     font-weight: 700;
+        //     letter-spacing: 0.1em;
+        //     margin-bottom: 50px;
+        //     &:active{
+        //         color: aqua;
+        //     }
+        // }
+        .block__line{
+            width: 1px;
+            height: 80px;
+            background-color: aliceblue;
+            margin-bottom: 50px;
+        }
+        .icons{
+            .ds;
+            flex-direction: column;
+            li{
+                cursor: pointer;
+                padding: 20px;
+            }
+        }
+    
+    }
+
+    .container {
+        height: 100%;
+
+        .ds;
+        flex-direction: column;
+      .contai;
+        header{
+            width: 100%;
+            
+        .ds;
+        padding-top: 20px;
+
+        .sp{
+            width: 27px;
+            height: 20px;
+            .ds;
+            flex-direction: column;
+            align-items: flex-start;
+            display: none;
+
+            nav{
+                height: 3.5px;
+                background-color: #fff;
+                
+                &:nth-child(1){
+                    width: 100%;
+                }
+
+                &:nth-child(2){
+                    width: 70%;
+                }
+
+                &:nth-child(3){
+                    width: 50%;
+                }
+            }
+        }
+
+        .main__menu{
+            .ds;
+            font-size: 18px; 
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            width: 824px;
+
+           
+        }
+        .number {
+            border-bottom: 2px solid #D1A954;
+            padding-bottom: 3px;
+        }
+        }
+        > section{
+            width: 100%;
+            .ds;
+            margin-top: -50px;
+            .about__theatre{
+                width: 540px;
+                .main__title{
+                    font-size: 48px;
+                    font-weight: 700;
+                    letter-spacing: 0.1em;
+                    color: #FFFF;
+                }
+                .text{
+                    padding-top: 50px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+                .afisha{
+                    .btn;
+                    margin-top:50px;
+                }
+            }
+
+            .slider{
+                width: 280px;
+                position: relative;
+               // transform: translateY(-150px);
+               z-index: 1;
+                
+                .slide{
+                    width: 100%;
+                    height: 350px;
+                    background-color: @orangeColor;
+                    position: relative;
+                    background: url(../img/sl1.jpg) no-repeat center/cover;
+                    top: 0;
+                    transition: 0.4s;
+                    // animation-name: fadeIn;
+                    // animation-duration: 0.4s;
+                    
+                    &::before{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-color: @orangeColor;
+                        position: absolute;
+                        top: 20px;
+                        left: 20px;
+                        z-index: -1;
+                        
+                       
+                    }
+                }
+                .arrows{
+                   
+                    .ds;
+                    transform: translateY(40px);
+                    
+                }
+            }
+
+            
+        }
+    }
+    
+    
+    .subtitle1{
+        padding-right: 50px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-size: 18px; 
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        line-height: 25px;
+    }
+    .arrow__prev{
+        height: 25px;
+        line-height: 25px;
+    }
+    .arrow__next{
+        height: 25px;
+        line-height: 25px;
+    }
+    .subtitle{
+        height: 25px;
+        font-size: 18px; 
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        line-height: 25px;
+    }
+    li:active{
+       color: aqua;
+    }
+    li > img:active{
+        background-color:  aqua;
+
+    }
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+    // --animate-repeat: 2;
+   
+  }
+.animate__animated.animate__flash{
+    --animate-duration: 2s;
+}
+
+    @media(max-width:700px){
+    .main__block{
+        height: auto;
+        padding-bottom: 150px;
+        .left__block{
+            display: none;
+        }
+        .container{
+            width: 90%;
+            header{
+                margin-bottom: 100px;
+                .main__menu{
+                    display: none;
+                }
+            }
+            > section{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .about__theatre{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 60px;
+                    .main__title{
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    .text{
+                        font-size: 18px;
+                        text-align: justify;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+    }
